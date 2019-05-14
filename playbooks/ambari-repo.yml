@@ -1,5 +1,5 @@
 ---
-- hosts: master
+- hosts: nodes
   become: true
   tasks:
           - name: download ambari repo file
@@ -14,5 +14,5 @@
 
           - name: install the latest version of ambari agent
             yum:
-                    name: ambari-server
+                    name: ambari-agent
                     state: latest
