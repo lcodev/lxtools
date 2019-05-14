@@ -1,0 +1,18 @@
+---
+- hosts: master
+  become: true
+  tasks:
+          - name: download ambari repo file
+            get_url:
+                    url: http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.6.0.0/ambari.repo
+                    dest: /etc/yum.repos.d
+
+          - name: install the latest version of ambari server
+            yum:
+                    name: ambari-server
+                    state: latest
+
+          - name: install the latest version of ambari agent
+            yum:
+                    name: ambari-server
+                    state: latest
