@@ -1,0 +1,6 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+10.1.10.8	lxmaster
+10.1.10.11	lxn01
+10.1.10.12	lxn02
+10.1.10.13	lxn03
